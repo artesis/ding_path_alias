@@ -126,7 +126,7 @@ function ding_path_alias_pathauto($op) {
         );
         if (count($languages) && variable_get('language_content_type_ding_library', 0)) {
           foreach ($languages as $lang_code => $lang_name) {
-            $build['patternitems']['ding_library_' . $lang_code] = t('Sbout pages for library nodes in @language', array('@language' => $lang_name));
+            $build['patternitems']['ding_library_' . $lang_code] = t('About pages for library nodes in @language', array('@language' => $lang_name));
           }
         }
         $settings['library_about_page'] = (object) $build;
